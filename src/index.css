@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color1: #2F4247;
+  --color2: #87ABA2;
+  --color3: #48656d;
+  --text1: #F0F1EB;
+  --text2: #fcb5b5ff;
+  color: var(--text1);
+  background-color: var(--color1);
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: 10px;
+    scrollbar-color: var(--color1) transparent;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--color1);
+    border-radius: 10px;
+  }
